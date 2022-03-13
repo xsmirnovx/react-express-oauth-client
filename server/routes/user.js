@@ -44,7 +44,7 @@ router.get('/', (req, res) => {
                         // GET request to /registration endpoint
                         {
                             method: 'GET',
-                            uri: `http://localhost:${config.authServerPort}/userinfo`,
+                            uri: `http://auth-server:${config.authServerPort}/userinfo`,
                             json: true,
                             headers: {
                                 'Authorization': 'Bearer' + req.session.access_token

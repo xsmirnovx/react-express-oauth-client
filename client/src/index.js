@@ -11,7 +11,6 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            // email: 'test.owner@auto1.com'
             body: {} // this is the body from /user
         };
     }
@@ -20,7 +19,7 @@ class App extends React.Component {
         return (
             <div id='App'>
                 <header>
-                    <h1>FusionAuth Example: React</h1>
+                    <h1>Example: React SPA + Express Server</h1>
                     <Greeting body={this.state.body}/>
                     <LogInOut body={this.state.body} uri={`http://react-app:${config.serverPort}`}/>
                 </header>
